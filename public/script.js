@@ -17,6 +17,7 @@ socket.on('rec-msg',(data)=>
 {
     $('#chat').append(` <li class="border p-2 ms-0 rounded-pill mb-2"><span class="fw-bold" >${data.username}: </span>-<span> ${data.msg} </span></li>
    `);
+    $('#chat').scrollTop($('#chat').outerHight());
 })
 
 
